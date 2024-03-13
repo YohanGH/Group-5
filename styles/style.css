@@ -1,0 +1,132 @@
+:root{
+    /* Charte graphique: */
+    ---dark-color: #010E26;
+    ---light-color:#E8E8F6;
+    ---dark-orange:#EBB35D;
+    ---light-orange:#FFEDD4;
+
+    /* Font: */
+
+    ---principal-font: Roboto;
+    ---secondary-font: Merriweather;
+}
+
+*,
+*::before,
+*::after,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:var(---principal-font);
+    background-color:var(---light-color);
+    color:var(---light-color);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* header */
+
+.container-header{
+    background-color:var(---dark-color);
+    box-shadow: 2rem dark ;
+}
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: ;
+}
+
+.navigation-list > li:first-child {
+    margin-right: auto;
+}
+
+.navigation-link li:first-child a {
+    display: block;
+    border: none;
+    padding:;
+    border-radius:;
+    border:;
+}
+
+.navigation-link {
+    margin-right: 5vw;
+}
+
+.navigation-link a {
+    color:var(---light-color);
+    font-size: 2rem;  
+    text-decoration: none;
+}
+
+.image-logo {
+    height:auto;
+    width: 10vw;
+}
+
+
+/* Main */
+
+.container-home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: var(---dark-color);
+    font-family: var(---secondary-font);
+    font-size: 4rem;
+
+}
+
+.magic-ball-image{
+    width: 20rem;
+
+}
+
+.magic-ball-section{
+    background:var(---light-orange);
+    font-size: 2rem;
+    font-family: var(---principal-font);
+    color:var(---dark-color);
+    padding: 3rem;
+    margin:4rem;
+    border-radius: 2rem;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.start-button{
+    text-decoration:none;
+    color: var(---light-color);
+    background-color: var(---dark-orange);
+    border-radius: 2rem;
+    padding:1rem;
+}
+
+
+footer{
+    background: var(---dark-color);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(---light-color);
+    text-decoration: none;
+
+}
+
+#licence a {
+font-size:1rem;
+    
+}
+
