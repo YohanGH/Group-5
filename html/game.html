@@ -13,7 +13,7 @@
       type="image/x-icon"
     />
     <link type="text/css" rel="stylesheet" href="../styles/style.css" />
-    <title>MagiCode | Accueil</title>
+    <title>MagiCode | Jeu</title>
   </head>
   <body>
     <header class="container-header">
@@ -28,7 +28,7 @@
             /></a>
           </li>
           <li class="navigation-link">
-            <a class="navigation-link-jouer" href="game.html">Jouer</a>
+            <a class="navigation-link-jouer" href="index.html">Home</a>
           </li>
           <li class="navigation-link">
             <a class="navigation-link-jouer" href="team.html">Equipe</a>
@@ -37,25 +37,47 @@
       </nav>
     </header>
 
-    <main class="container-home">
-      <h1 class="magic-ball-title">Magic 8 Ball</h1>
-      <img
-        class="magic-ball-image"
-        src="../assets/images/billard-acceuil.svg"
-        alt="Image du Magic 8 Ball"
-      />
-      <section class="magic-ball-section">
-        <p>
-          La boule magique répond à toutes tes questions!
-          <br /><br />
-          Tu te poses des questions et tu n’arrives pas à décider par toi même?
-          Demande à la magic 8 ball et la réponse apparaît d’elle même
-        </p>
-        <a class="start-button" href="game.html">C'est parti</a>
+    <main>
+      <section class="container-question">
+        <form action="question" id="question-form" method="post">
+          <textarea
+            name="question"
+            id="question"
+            rows="4"
+            placeholder="Ecrivez votre question ici ..."
+            maxlength="115"
+          >
+Pose ta question</textarea
+          >
+        </form>
+      </section>
+
+      <section class="container-ball">
+        <div class="image.container">
+          <img
+            id="backImage"
+            class="back-image"
+            src="../assets/images/billard-intermedaire.svg"
+            alt="ball back image"
+          />
+          <img
+            id="frontImage"
+            class="front-image"
+            src="../assets/images/billard-reponse.svg"
+            alt="ball front image"
+          />
+        </div>
+
+        <p id="ballText" class="ball-text"></p>
+      </section>
+
+      <section class="container-button">
+        <button id="submitButton" class="buntton">C'est parti !</button>
       </section>
     </main>
 
     <footer>
+
       <a
         id="licence"
         href="https://github.com/YohanGH/MagiCode/blob/main/LICENCE.GPL" target="_blank" rel="noopener"
