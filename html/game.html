@@ -7,7 +7,11 @@
       name="description"
       content="jeu développé dans le cadre du projet 1"
     />
-    <link rel="shortcut icon" href="/" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon-billard.ico"
+      type="image/x-icon"
+    />
     <link type="text/css" rel="stylesheet" href="../styles/style.css" />
     <title>MagiCode | Jeu</title>
   </head>
@@ -16,15 +20,18 @@
       <nav class="container-nav-barre">
         <ul class="navigation-list">
           <li>
-            <a class="navigation-image-link" href="/"
-              ><img class="image-logo" src="index.html" alt="logo"
+            <a class="navigation-image-link" href="index.html"
+              ><img
+                class="image-logo"
+                src="../assets/images/logo-billard.svg"
+                alt="logo"
             /></a>
           </li>
           <li class="navigation-link">
             <a class="navigation-link-jouer" href="game.html">Jouer</a>
           </li>
           <li class="navigation-link">
-            <a class="navigation-link-jouer" href="/">Equipe</a>
+            <a class="navigation-link-jouer" href="team.html">Equipe</a>
           </li>
         </ul>
       </nav>
@@ -32,38 +39,50 @@
 
     <main>
       <section class="container-question">
-        <form action="question">
-          <label for="Pose ta question"></label
-          ><textarea name="question" id="question" cols="20" rows="1">
+        <form action="question" id="question-form" method="post">
+          <textarea
+            name="question"
+            id="question"
+            rows="4"
+            placeholder="Ecrivez votre question ici ..."
+            maxlength="115"
+          >
 Pose ta question</textarea
           >
         </form>
       </section>
 
       <section class="container-ball">
-        <img
-          class="back-image"
-          src="../assets/images/billard intermédiaire.svg"
-          height="100px"
-          alt="ball back image"
-        />
-        <img
-          class="front-image"
-          src="../assets/images/billard réponse.svg"
-          height="100px"
-          alt="ball front image"
-        />
-        <img src="" alt="" />
+        <div class="image.container">
+          <img
+            id="backImage"
+            class="back-image"
+            src="../assets/images/billard-intermedaire.svg"
+            alt="ball back image"
+          />
+          <img
+            id="frontImage"
+            class="front-image"
+            src="../assets/images/billard-reponse.svg"
+            alt="ball front image"
+          />
+        </div>
+
+        <p id="ballText" class="ball-text"></p>
       </section>
 
       <section class="container-button">
-        <button class="buntton">C'est parti !</button>
+        <button id="submitButton" class="buntton">C'est parti !</button>
       </section>
     </main>
 
     <footer>
       <hr />
-      <a id="licence" href="/">Licence GPL-2.0 - 2024</a>
+      <a
+        id="licence"
+        href="https://github.com/YohanGH/MagiCode/blob/main/LICENCE.GPL"
+        >Licence GPL-2.0 - 2024</a
+      >
     </footer>
   </body>
 </html>
