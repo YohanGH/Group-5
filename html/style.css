@@ -173,6 +173,7 @@ text-decoration: none;
     height: 60vh;
     width: auto;
     max-width: 100%;
+
 }
 
 .image-container {
@@ -187,7 +188,6 @@ text-decoration: none;
 .front-image {
     //display: none;
 }
-
 
 
 
