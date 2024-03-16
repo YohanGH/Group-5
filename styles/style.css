@@ -1,7 +1,4 @@
-/* rem = remplace px vh = hauteur et vw = profondeur */
-
 :root {
-	/* Charte graphique: */
 	--dark-color: #010e26;
 	--light-color: #e8e8f6;
 	--dark-orange: #ebb35d;
@@ -26,7 +23,7 @@ body {
 	flex-direction: column;
 }
 
-/* header */
+/* --- header --- */
 
 .container-header {
 	background-color: var(--dark-color);
@@ -62,17 +59,38 @@ body {
 	font-size: 1.5rem;
 	text-decoration: none;
 	padding: 1rem;
+	margin: 0.625rem;
 }
 
 .image-logo {
-	height: auto;
-	width: 15vw;
-	margin: 0rem;
+	height: 10vw;
+	width: auto;
 }
 
-/* Main */
+/* --- Main --- */
 
-.container-home {
+.container-home,
+.container-team,
+.container-game {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem;
+}
+
+.magic-ball-image {
+	width: 65vw;
+	height: auto;
+	margin: 2.5rem 0;
+}
+
+.magic-ball-section {
+	background: var(--light-orange);
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--dark-color);
+	padding: 1rem;
+	border-radius: 2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -83,62 +101,20 @@ body {
 	color: var(--dark-color);
 	font-weight: bold;
 	font-size: 3rem;
-	margin: 1rem;
-	text-align: center;
 }
 
-.magic-ball-image {
-	width: 10rem;
-}
-
-.magic-ball-section {
-	background: var(--light-orange);
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: var(--dark-color);
-	padding: 1rem;
-	margin: 2rem;
-	border-radius: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-/* voir pour ajouter class à la balise P */
-.start-button,
-#submitButton.buntton {
+.start-button {
 	text-decoration: none;
 	color: var(--dark-color);
 	background-color: var(--dark-orange);
 	border-radius: 1rem;
 	padding: 0.5em;
-	margin: 0.5rem;
-	margin-top: 1rem;
+	margin: 1rem 4rem;
 	border: none;
 }
 
-footer {
-	background: var(--dark-color);
-	height: 10vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--light-color);
-	text-decoration: none;
-}
 
-a#licence {
-	font-size: 1rem;
-	color: var(--light-color);
-	text-decoration: none;
-}
-
-/* Page Game */
-
-#question-form {
-	margin-bottom: 3vw;
-	font-size: 5vw;
-}
+/* --- Page Game --- */
 
 #question {
 	width: 90vw;
@@ -155,6 +131,24 @@ a#licence {
 	padding-bottom: 1rem;
 	color: var(--dark-color);
 }
+.userQuestionModified {
+	border: none;
+}
+
+#submitButton {
+	text-decoration: none;
+	color: var(--dark-color);
+	background-color: var(--dark-orange);
+	border-radius: 1rem;
+	padding: 0.5em;
+	margin: 1rem 4rem;
+	border: none;
+}
+
+#question-form {
+	margin-bottom: 3vw;
+	font-size: 5vw;
+}
 
 .image-container img {
 	height: 60vh;
@@ -167,41 +161,48 @@ a#licence {
 	text-align: center;
 }
 
-.back-image {
-}
-
 .front-image {
-	/* display: none; */
+	display: none;
 }
 
-/* team */
+/* --- team --- */
 
-.profil {
-	display: flex;
-}
-
-.name {
-	font-size: 1.6rem;
-	color: var(--dark-orange);
-}
-.profil {
-	background: var(--dark-color);
-	border-radius: 5rem;
-}
-#container-presentation {
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
+.presentation {
+	background-color: var(--dark-color);
+	border-radius: 3rem;
+	border: 1px solid var(--dark-color);
+	box-shadow: 1rem 1rem rgba(0, 0, 0, 0.2);
+	color: var(--light-color);
+	padding: 2rem;
 	margin: 2rem;
 }
-.presentation {
-	border-radius: 3rem;
-	box-shadow: 1rem 1rem rgba(0, 0, 0, 0.2);
-	color: var(--dark-color);
-	padding: 2rem;
+
+.image-profil {
+	width: 15vw;
+	height: auto;
 }
+
+.presentation-name {
+	font-size: 1.6rem;
+	color: var(--dark-orange);
+	margin: 1rem 0;
+}
+
+.presentation > p {
+	padding-left: 0.5rem;
+}
+
+/* --- Footer --- */
 
 footer {
 	margin-top: auto;
+	background: var(--dark-color);
+	text-align: center;
+	color: var(--light-color);
+	padding: 1.25rem 0
+}
+
+a#licence {
+	font-size: 1rem;
+	color: var(--light-color);
 }
