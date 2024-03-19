@@ -147,7 +147,7 @@ body {
 	font-size: var(--base-font-size);
 }
 
-.userQuestionModified {
+.QuestionModified {
 	border: none;
 }
 
@@ -160,6 +160,7 @@ body {
 	padding: 0.5em;
 	margin: var(--base-spacing) var(--large-spacing);
 	border: none;
+	cursor: pointer;
 }
 
 #question-form {
@@ -176,6 +177,15 @@ body {
 .image-container {
 	position: relative;
 	text-align: center;
+}
+
+.ball-text {
+	display: none;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 1rem;
 }
 
 .front-image {
