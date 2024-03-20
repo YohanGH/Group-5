@@ -14,12 +14,15 @@ document.addEventListener("DOMContentLoaded", function(){
         const imageBack = document.getElementById ("backImage");
         const imageFront = document.getElementById ("frontImage");
         const ballText = document.getElementById ("ballText");
+        const textArea = document.getElementById('question')
 
         if (etatInitial){
             imageBack.style.display = "none";
             imageFront.style.display = "block";
             ballText.style.display = "block";
             ballText.textContent = randomText();
+            submitButton.innerHTML = "Rejouer";
+            // textArea.innerHTML = "";
             etatInitial=false;
             console.log("verif1")
     
@@ -30,9 +33,12 @@ document.addEventListener("DOMContentLoaded", function(){
                 imageFront.style.display = "none";
                 ballText.style.display = "none";
                 etatInitial=true;
+                submitButton.innerHTML = "C'est parti"
                 console.log("verif2")
         }
     }
+
+   
 
     function randomText() {
         let randomIndex = Math.floor(Math.random() * reponseBall.length);
