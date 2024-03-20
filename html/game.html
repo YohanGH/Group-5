@@ -12,7 +12,7 @@
 			href="../assets/images/favicon-billard.ico"
 			type="image/x-icon"
 		/>
-		<link type="text/css" rel="stylesheet" href="../styles/style.css" />
+		<link rel="stylesheet" href="../styles/style.css" />
 		<title>MagiCode | Jeu</title>
 	</head>
 	<body>
@@ -29,7 +29,7 @@
 					</li>
 					<li class="navigation-link">
 						<a class="navigation-link-jouer" href="index.html"
-							>Home</a
+							>Accueil</a
 						>
 					</li>
 					<li class="navigation-link">
@@ -41,7 +41,7 @@
 			</nav>
 		</header>
 
-		<main>
+		<main class="container-game">
 			<section class="container-question">
 				<form action="question" id="question-form" method="post">
 					<textarea
@@ -50,17 +50,15 @@
 						rows="4"
 						placeholder="Ecrivez votre question ici ..."
 						maxlength="115"
-					>
-Pose ta question</textarea
-					>
+					></textarea>
 				</form>
 			</section>
 
 			<section class="container-ball">
-				<div class="image.container">
+				<div class="image-container">
 					<img
 						id="backImage"
-						class="back-image"
+						class="back-image wobble"
 						src="../assets/images/billard-intermedaire.svg"
 						alt="ball back image"
 					/>
@@ -70,16 +68,15 @@ Pose ta question</textarea
 						src="../assets/images/billard-reponse.svg"
 						alt="ball front image"
 					/>
+					<p id="ballText" class="ball-text"></p>
 				</div>
-
-				<p id="ballText" class="ball-text"></p>
 			</section>
 
 			<section class="container-button">
-				<button id="submitButton" class="buntton">C'est parti !</button>
+				<button type="button" id="submitButton">C'est parti !</button>
 			</section>
 		</main>
-
+		<script src="../scripts/main.js"></script>
 		<footer>
 			<a
 				id="licence"
