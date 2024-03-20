@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			ballText.style.display = "none";
 			etatInitial = true;
 			submitButton.innerHTML = "C'est parti";
-			// textArea.value = "";
+			textArea.value = "";
 		}
 	}
 
