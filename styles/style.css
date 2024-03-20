@@ -126,7 +126,7 @@ body {
 	padding: var(--base-spacing);
 	margin: var(--base-spacing) var(--large-spacing);
 	border: none;
-	max-width: 150px;
+	max-width: 160px;
 	align-self: center;
 }
 
