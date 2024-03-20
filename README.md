@@ -3,19 +3,32 @@
 ## Sommaire
 
 - [À propos de l'application](#à-propos-de-lapplication)
+  - [But de l'application](#but-de-lapplication)
+  - [Valeur pour les Utilisateurs](#valeur-pour-les-utilisateurs)
 - [Fonctionnalités](#fonctionnalités)
 - [Technologies utilisées](#technologies-utilisées)
 - [Utilisation](#utilisation)
+  - [Exemples d'Utilisation](#exemples-dutilisation)
 - [Licence](#licence)
 - [Équipe de développement](#équipe-de-développement)
+- [Processus et réflexion organisationnelle](#Processus-et-réflexion-organisationnelle)
+  - [Analyse concurrentielle](#Analyse-concurrentielle)
+  - [Gestion de projet](#Gestion-de-projet)
+    - [Roadmap et Tableau d'Avancement](#Roadmap-et-Tableau-d'Avancement)
+    - [Réunions et Rétrospectives](#Réunions-et-Rétrospectives)
+  - [Avancements et Itérations](#Avancements-et-Itérations)
+  - [Défis et Solutions](#Défis-et-Solutions)
 - [Organisation de Projet](#organisation-de-projet)
   - [Informations Générales](#informations-générales)
   - [Analyse Concurrentielle](#analyse-concurrentielle)
   - [Identité Visuelle](#identité-visuelle)
-  - [Légal](#légal)
+  - [Intégrations, Tests, et Optimisation](#intégrations-tests-et-optimisation)
+    - [Retours Utilisateurs et Impacts sur l'Optimisation](#retours-utilisateurs-et-impacts-sur-loptimisation)
+    - [Ajustements et Améliorations](#ajustements-et-améliorations)
   - [Arborescence Git](#arborescence-git)
   - [Deadlines](#deadlines)
   - [Calendrier d'Avancement](#calendrier-davancement)
+
 
 ## À propos de l'application
 
@@ -170,14 +183,6 @@ Ces défis, bien que complexes, ont fourni à notre équipe de précieuses oppor
 
 Cette section détaille la planification et la gestion du projet, offrant une transparence sur le processus de développement et l'organisation de l'équipe.
 
-Identité Visuelle
-Charte graphique : Notre charte graphique vise à évoquer la magie et le mystère, tout en restant ludique et accessible.
-Logo :
-Palette de couleurs :
-Bleu nuit (#003366) pour le mystère et la profondeur.
-Argent (#C0C0C0) pour ajouter une touche moderne et technologique.
-Blanc (#FFFFFF) pour la clarté et la simplicité.
-
 ### Informations Générales
 
 - **Type de projet :** _Application Web_
@@ -194,14 +199,30 @@ Blanc (#FFFFFF) pour la clarté et la simplicité.
 ### Identité Visuelle
 
 - **Charte graphique :** _Notre charte graphique puise son inspiration dans le charme rétro des années 70 et 80, période durant laquelle la Magic 8 Ball a gagné en popularité, tout en y intégrant une touche de modernité pour séduire un public contemporain._
-- **Typographie(s) :** _Nous utilisons la police "Roboto" pour le texte courant pour sa lisibilité sur divers appareils et "Merriweather" pour les titres, ajoutant une touche d'élégance._
+- **Typographie(s) :** _Nous utilisons la police "Monospace" pour le texte courant pour sa lisibilité sur divers appareils et en gras pour les titres, ajoutant une touche d'élégance._
 - **Logo :** _Notre logo, disponible [ici](https://github.com/YohanGH/MagiCode/tree/main/assets/images/logo), combine une représentation stylisée de la Magic 8 Ball avec des éléments modernes et ludiques._
 - **Palette de couleurs :** _(Codes couleurs et utilisation)_
+    - **Bleu nuit (#1a263c) :** Choisi pour évoquer le mystère et la profondeur, ce bleu soutenu confère à l'interface une dimension à la fois professionnelle et engageante.
+    - **Orange (#ebb35d) :** Utilisé comme accent moderne, cet orange vif apporte une touche de dynamisme et de fraîcheur à l'ensemble.
+    - **Orange Clair (#ffedd4) :** Complémentaire à l'orange plus vif, cette nuance plus douce contribue à la cohérence visuelle et à l'équilibre de la palette.
+    - **Blanc (#ececf8) :** Symbole de clarté et de simplicité, le blanc est utilisé pour son pouvoir d'éclairer et d'aérer l'interface, facilitant ainsi la lecture et l'interaction.
 
-### Légal
+## Intégrations et Tests
 
-- **Mentions légales :** _https://www.gnu.org/licenses/old-licenses/gpl-2.0.fr.html_
-- **Licence :** GPL-2
+Au cours de la phase de développement de notre application, une série d'intégrations et de tests a été réalisée par mes camarades de classe. Cette démarche collaborative a joué un rôle crucial dans l'amélioration continue de notre projet. Elle nous a permis d'identifier et de mettre en œuvre des ajustements significatifs pour optimiser l'expérience utilisateur et la fonctionnalité de l'application. Parmi les modifications apportées, nous avons intégré :
+
+### Retours Utilisateurs et Impacts sur l'Optimisation
+
+Les phases de tests ont généré des retours précieux, soulignant notamment :
+
+- **Bonne gestion des couleurs :** La palette de couleurs choisie a été saluée pour son harmonie et son impact positif sur la prise en main de l'application, contribuant à une expérience utilisateur enrichie.
+- **Prise en Main et Navigation:** La facilité de prise en main et la fluidité de la navigation ont été mises en avant, témoignant de l'intuitivité de l'interface et de l'efficacité du placement des éléments.
+Ces étapes d'intégration, de tests, et d'optimisation reflètent notre engagement envers une amélioration continue de l'application, en prenant en compte les retours d'expérience pour enrichir et affiner l'expérience utilisateur. Ce processus collaboratif souligne notre capacité à adapter et à peaufiner notre application, garantissant une solution à la fois fonctionnelle, esthétique, et intuitive pour les utilisateurs.
+
+### Ajustements et Améliorations
+
+- **Augmentation du padding de la barre de navigation :** L'ergonomie de l'interface a été améliorée grâce à l'augmentation du padding autour de la barre de navigation, rendant la navigation plus agréable visuellement et facilitant l'accès aux différentes sections de l'application.
+- **Nettoyage Automatique de la Zone de Texte :** Pour offrir un départ neuf à chaque nouvelle session, les entrées précédentes dans la zone de texte sont désormais automatiquement effacées, contribuant à une interface plus claire et une interaction utilisateur optimisée.
 
 ### Arborescence Git
 
